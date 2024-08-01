@@ -1,0 +1,49 @@
+.container-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.container-welcomer {
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    overflow: hidden;
+    height: 300px;
+    align-content: center;
+}
+
+.hidden-above {
+    transform: translateY(-200px);
+    opacity: 0;
+}
+
+.hidden-below {
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.welcomer-text {
+    color: var(--white);
+    width: fit-content;
+    transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.title {
+    
+}
+
+.text-header {
+    line-height: 1.3rem;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
